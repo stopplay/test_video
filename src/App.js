@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Video from './Video';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Video
+        autoPlay
+        srcMp4="https://res.cloudinary.com/colb/video/upload/v1583526276/Videos/video_boyrdo.mp4"
+        srcWeb="https://res.cloudinary.com/colb/video/upload/v1583526466/Videos/video_p4job6.webm"
+        srcOgv="https://res.cloudinary.com/colb/video/upload/v1583526462/Videos/video_frmsoa.ogv"
+      />
     </div>
   );
 }
